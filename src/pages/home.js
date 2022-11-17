@@ -975,6 +975,7 @@ class Home extends React.Component {
             <img
             src="https://metabnb-hng-task3.netlify.app/assets/Group.39565081.svg"
             alt="Metabnb Logo"
+            style={{}}
             />
           <div className="mt-5 pt-5" >
             <div>
