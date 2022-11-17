@@ -1,11 +1,21 @@
 import React from "react";
 import {Link, Outlet } from "react-router-dom"
+import { Button, Modal } from "react-bootstrap"
+
 
 class Contact extends React.Component {
+    constructor(){
+        super()
+        this.state={
+          show: false
+        }
+      }
+      handleModal() {
+        this.setState({show:!this.state.show})
+      }
     render(){
     return (
-    <>
-    
+      <>
   <div>
     <div>
     <div className="bg-white p-3" >
@@ -46,11 +56,32 @@ class Contact extends React.Component {
               Community
             </a>
           </div>
-          <button
-          className="m-2 btn md-rounded text-white"
+          <Button onClick={()=>{this.handleModal()}}
+          className="m-2 btn md-rounded text-white Home"
           style={{ backgroundColor: "#A02279", height: 50, fontSize: 12 }}>
-            Connect Wallet
-          </button>
+            Connect Wallete
+          </Button>
+          <Modal show={this.state.show}>
+            <Modal.Header>Connect Wallet <span></span></Modal.Header>
+            <Modal.Body>
+              <h3 className='text-center'>Choose your preffered wallet</h3>
+              <div className='d-flex flex-row justify-content-between'>
+              <img src="data:image/png;base64,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" />
+              <span style={{ height: 50, fontSize: 40, fontWeight: "bold" }}>Meta Mask</span>
+              <Button>
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAQCAYAAAAvf+5AAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACpSURBVHgBhdJNDsIgEAXgGU7iUfQGbrWL0mhM1NtYfxa2FqO11/EGegQvICNBbWjL0LdiwpcHJACYbPJSptllDIHgoagGWtPDDgRyNZ+efVAsk8mTUNtNQlD77BZ7G/+L7emqkETMNaM7hDC2j+BwB3LYC9tY6/dIcBDJdP0iSLy8cJeXhaHyO1GyXkR37EWzSHUew6EGDKEa9iEL3U/BIfduMj1WQwjkA4rBaGQB0tEjAAAAAElFTkSuQmCC" />
+              </Button>
+              </div>
+              <div className='d-flex flex-row justify-content-between'>
+              <img src="data:image/png;base64,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" />
+              <span style={{ height: 50, fontSize: 20, fontWeight: "bold" }}>Meta Mask</span>
+              <Button>
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAQCAYAAAAvf+5AAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACpSURBVHgBhdJNDsIgEAXgGU7iUfQGbrWL0mhM1NtYfxa2FqO11/EGegQvICNBbWjL0LdiwpcHJACYbPJSptllDIHgoagGWtPDDgRyNZ+efVAsk8mTUNtNQlD77BZ7G/+L7emqkETMNaM7hDC2j+BwB3LYC9tY6/dIcBDJdP0iSLy8cJeXhaHyO1GyXkR37EWzSHUew6EGDKEa9iEL3U/BIfduMj1WQwjkA4rBaGQB0tEjAAAAAElFTkSuQmCC" />
+              </Button>
+              </div>
+
+            </Modal.Body>
+          </Modal>
 
         </div>
         <div className="d-flex d-md-none flex-row justify-content-between">
@@ -62,11 +93,32 @@ class Contact extends React.Component {
             />
           </div>
           <div className='d-flex flex-row'>
-              <button
-              className="mt-2 mx-1 btn sm-rounded text-white"
-              style={{ backgroundColor: "#A02279", height: 40 }}>
-                Connect Wallet
-              </button>
+          <Button onClick={()=>{this.handleModal()}}
+          className="m-2 btn md-rounded text-white Home"
+          style={{ backgroundColor: "#A02279", height: 50, fontSize: 12 }}>
+            Connect Wallete
+          </Button>
+          <Modal show={this.state.show}>
+            <Modal.Header>Connect Wallet <span></span></Modal.Header>
+            <Modal.Body>
+              <h3 className='text-center'>Choose your preffered wallet</h3>
+              <div className='d-flex flex-row justify-content-between'>
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAerSURBVHgB7Vh9bJ1VGf+dc9773o/e2+92G+02uq6rQZmIzGZQYGbiFDMkRsRo5GMJC0YlS7DVmJg0JgSYCEjCHzN+JURU5pwRJZkg6yYMGJlUtqmjm7S7d23Xlrb3++t93+Pz3tu199733NteAiEhfdI3vfc5zznnd57zez7eC6zIinxIZfg7G934gOThW5oD5caYStl/XXO33yvevKWbHWquwWNteycGyVDifZRTt12h+9eHe0MRc8/zZ63tLG11Dbw8PVZqpylnM3ZrLC31352UO69dJ3bK/ssmQpBPQxpPtf94agjvoZzrX3ONS+KLEuFvv37Bqj8RkjDJNUywO2j4IQc01SL917faoD5+6XtnI8cNlwsEbJJInLKkfFRq2pH1D53/H96FnLl/TbOX8TvA5S6C8NFEFvjHiInhaasQ2dDeo5OfWBJwf09jO3QtWKqv9TDc1CnQVpufQk6Y45CHLIv/vn009Ge2HyaWkFDf6tsszr8sJfs8rZLj6WRM4oWzJmaSxYyjb1KaidWPHItNFuqdlHCJr6s2i6Qk/vRvA9e0C/S0c/uk9RLsdsbl7TNXtCUSDyCDCpJMMxZPyTobySUvDY1bePW8BcNyhgez/4TvXiD2o8qAwbvLxZfNrdeCJqbjEjd0EEX0vN7IwAedngqSzi6umSQKHBo2EAovEccWOhzoHKCYPI4l5NyMhT+cMjAVz2+YNfOHKbsvUdOYJ8xYROI3Q8sAC9tt8iUsBdgy5AtYhkTTEr9908A/x/KBkk6Xt01mbEICr5w38cfTBlLG8jIkF9oxh65UEc9MjRJ/YlimvDRq4iBx+51YHlSp2KqZOHI2Jy5YqEKSDx8d/y+WAvyzE8jSxmdRhQTpevefNDARcSKeoLFn6CbGIlXXnSFVseJKU4b/oEppr2Pw6059jYuho4GhWpEMb6v0DsAD21r8BHgrqpCt6wQ+QznaxZ3AdAFso4zSs5ajGmESvXu21ddjScCDUzEi41+wDNFo9o6NAlva8ssoOTyv66H8/bkuAbFMZ9O0vz4+ODeHpQDnlBxHaUbFCKl1M3xts4buFu4ApwJsy6Zmjq/QnMAy+kCadkyl19TGIgZmOQ6zKsCwqYVhPXHSrzHoJRRQhVXpIVp8DN+4SkOYCsnbsxLDk3IhnxeK4CysWA5lL6ivt3WfS2D3hmaGLvLMhiaGppq8eYJybirlnKO7AH9JvYtRSssYTluvh555T09GJYJzEm9NWfRQuWDywb1Hpn6AagAHv9+yMeB1DetasYld1WwQqut30X0Faop1UbLNGuo9aslWK7njDBWVrBRtLQPBMdUcdT9M0uAT13JFhETIG9GYRS2zzfX8uP3ZfiydEeDiOemMzD25A8o8bSR9sXLtGEdTfbG97SAN2c/Sx1+jGsB09LtVbqz1c0SoCCQzzm7S6xFoLsm5iaSFeMIZv163QJ2fQ8V8LsWd5QArs4QcWNXKpbxRNebSJJoaXTlwtqQoNo/MNmLGcEEoboQxgaip5WzS83HsIbBNDS7ySZnqR3VADjhzcFnASY1fhwr89nosunodmt+NvcFOPBlaj8MzTRTZvOhS7M+Cdnh2qjVn80ioE8znoVvS4fFUzJrupNtzk2pAndYY/1al/G57WacXsY4AdWzbR3BmzkOPG27dPn8xVTRKNb3rUrhz8zA6A2lqMxlxmufWqCTMFLvp336H3gF23yddyekJu1vTK6wH02K5Prdw43hCwOc1cwGYW4uGEimOGu+iN7MGswsTeX4JwDQ1rButq/suxgv1Dg+Hx8Y+zTlXgs2aciFGGBX7Us4KoSoAJUBoXpaKRu59at7cpSnv0+fJaj30/8WKgKMRcZq51KdP0otiJLZ45fW1dvDwXMEoB1gr0GXo1Wh61kI4sriG3y/oBtQENLkYKdU5gm7tY6EL9C+oWsDjIe65FhdnlIdjCTrIfNVT8fLSIRJkY9vygh3ttXyesl3ciOpnBGXQETcP0MJ7SvU2N2vJI+/M5kvXpVYimbY5DfxrluPlkWzRnF5qPa9sXKx2oqDY1AXEAt8dGCQGVXolYE1YBy3J9yjHiG/+Gk7l2VrgsNHUjUTXF/DEvufw2hsni+xPa1fjgR3b4T7zLMTM8EJ19PuEMm8XQP6lcn+VMu11H9cS2QQtp3x193kF8ZHKa3M30t07YTZszOnjiQMO27GLkzAbNyGx9X5oBFgffg56+CS8vooNfWbt692vAOPLA9wxMJIK9bUNUm65uWjAbqQ4zkBah91rOo5Pbb73hx6PvsGueaZpoqEugKs/9pGiKQFq37KGQfzWkK7fgOjm3UM1iUefZIngFhr+FD1XKSD8nQ0OKlumsr0EE/KAtNjNxLGL9Fvaixz8mK7Jv7U8eOGtvMU4nn9m9qAroT/u9bjv8nq8uG/XV3ONTaFwO8pIF43HkEqnnhoKRu+5b+BV+0eBn9vjwb72LnLADjLczqTcQk5qM5n1dFlc5QZGv7muwVWbvdLVmH2j5XvTUVSQwwd+cReVgycImfJ3XcZYmGDfc/2X7t5faZ2J766qMTSth2etc5f9ZHxUuRbeIzl88FeXM0v2kzOLeE8xNg2Bn954664gVmRFVmRF3nf5P07H5qV3hS5kAAAAAElFTkSuQmCC" />
+              <span style={{ height: 50, fontSize: 40, fontWeight: "bold" }}>Meta Mask</span>
+              <Button>
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAQCAYAAAAvf+5AAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACpSURBVHgBhdJNDsIgEAXgGU7iUfQGbrWL0mhM1NtYfxa2FqO11/EGegQvICNBbWjL0LdiwpcHJACYbPJSptllDIHgoagGWtPDDgRyNZ+efVAsk8mTUNtNQlD77BZ7G/+L7emqkETMNaM7hDC2j+BwB3LYC9tY6/dIcBDJdP0iSLy8cJeXhaHyO1GyXkR37EWzSHUew6EGDKEa9iEL3U/BIfduMj1WQwjkA4rBaGQB0tEjAAAAAElFTkSuQmCC" />
+              </Button>
+              </div>
+              <div className='d-flex flex-row justify-content-between'>
+              <img src="data:image/png;base64,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" />
+              <span style={{ height: 50, fontSize: 20, fontWeight: "bold" }}>Meta Mask</span>
+              <Button>
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAQCAYAAAAvf+5AAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACpSURBVHgBhdJNDsIgEAXgGU7iUfQGbrWL0mhM1NtYfxa2FqO11/EGegQvICNBbWjL0LdiwpcHJACYbPJSptllDIHgoagGWtPDDgRyNZ+efVAsk8mTUNtNQlD77BZ7G/+L7emqkETMNaM7hDC2j+BwB3LYC9tY6/dIcBDJdP0iSLy8cJeXhaHyO1GyXkR37EWzSHUew6EGDKEa9iEL3U/BIfduMj1WQwjkA4rBaGQB0tEjAAAAAElFTkSuQmCC" />
+              </Button>
+              </div>
+
+            </Modal.Body>
+          </Modal>
             <div className="pos-f-t" style={{marginRight: -20}}>
               <div className="collapse" id="navbarToggleExternalContent">
                 <div className="bg-white p-4">

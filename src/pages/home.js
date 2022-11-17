@@ -60,7 +60,7 @@ class Home extends React.Component {
           <Button onClick={()=>{this.handleModal()}}
           className="m-2 btn md-rounded text-white Home"
           style={{ backgroundColor: "#A02279", height: 50, fontSize: 12 }}>
-            Connect Wallete
+            Connect Wallet
           </Button>
           <Modal show={this.state.show}>
             <Modal.Header>Connect Wallet <span></span></Modal.Header>
@@ -96,7 +96,7 @@ class Home extends React.Component {
           <Button onClick={()=>{this.handleModal()}}
           className="m-2 btn md-rounded text-white Home"
           style={{ backgroundColor: "#A02279", height: 50, fontSize: 12 }}>
-            Connect Wallete
+            Connect Wallet
           </Button>
           <Modal show={this.state.show}>
             <Modal.Header>Connect Wallet <span></span></Modal.Header>
