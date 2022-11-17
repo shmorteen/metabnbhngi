@@ -62,7 +62,7 @@ class Home extends React.Component {
           style={{ backgroundColor: "#A02279", height: 50, fontSize: 12 }}>
             Connect Wallet
           </Button>
-          <Modal className='w-sm-50 w-md-100' show={this.state.show}>
+          <Modal className='w-sm-50 w-md-100 mt-5' show={this.state.show}>
             <Modal.Header>Connect Wallet <span><img onClick={()=>{this.handleModal()}} src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADLSURBVHgB7ZQ9EoMgEIUXadVJp3KL3CBH8gYhXbqcJ13schI4ABSpMMuMdMifdvrN7MgMz326uwBwckyGYRj7vr/n6LuuG3171dpLhBCeYrJoXpTSC+TAGOP4ZXPIxO5ZjdVCCSGTzclDJjnJaUyglPq0bUtwyeu6Boyb7Q/GQwjBYS/cn+SWpUoVGmNm3zpGtEQWW3NXFowJlnJprSfYiq+hKSNcnHw3k5RRLDbJmXNnsnYXeZvcNM0VH28p5RMiuHOC/LDpXzg5Hn8FVVaECUMmMQAAAABJRU5ErkJggg=="/></span></Modal.Header>
             <Modal.Body>
               <h3 className='text-start' style={{fontSize:18}}>Choose your preffered wallet</h3>
@@ -99,7 +99,7 @@ class Home extends React.Component {
           style={{ backgroundColor: "#A02279", height: 50, fontSize: 12 }}>
             Connect Wallet
           </Button>
-          <Modal show={this.state.show}>
+          <Modal className='w-sm-50 w-md-100 mt-5' show={this.state.show}>
             <Modal.Header>Connect Wallet <span><img onClick={()=>{this.handleModal()}} src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADLSURBVHgB7ZQ9EoMgEIUXadVJp3KL3CBH8gYhXbqcJ13schI4ABSpMMuMdMifdvrN7MgMz326uwBwckyGYRj7vr/n6LuuG3171dpLhBCeYrJoXpTSC+TAGOP4ZXPIxO5ZjdVCCSGTzclDJjnJaUyglPq0bUtwyeu6Boyb7Q/GQwjBYS/cn+SWpUoVGmNm3zpGtEQWW3NXFowJlnJprSfYiq+hKSNcnHw3k5RRLDbJmXNnsnYXeZvcNM0VH28p5RMiuHOC/LDpXzg5Hn8FVVaECUMmMQAAAABJRU5ErkJggg=="/></span></Modal.Header>
             <Modal.Body>
               <h3 className='text-start' style={{fontSize:18}}>Choose your preffered wallet</h3>
@@ -956,7 +956,7 @@ class Home extends React.Component {
             </li>
           </ul>
             </div>
-            <div className='mx-5'>
+            <div className=''>
           <h3 className="mb-6 font-bold" style={{color: "white"}}>Places</h3>
           <ul>
             <li className="my-2 text-sm">
