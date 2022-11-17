@@ -17,7 +17,7 @@ class Home extends React.Component {
   render() {
     return (
       <>
-  <div className='container-fluid border border-dark p-sm-5 p-md-0 vw-100% vh-100%' style={{fontFamily: "Red Rose,cursive", maxHeight:"100%", maxWidth:"100%"}}>
+  <div className='container-fluid p-sm-5 p-md-0 vw-100% vh-100%' style={{fontFamily: "Red Rose,cursive", maxHeight:"100%", maxWidth:"100%"}}>
         <div className="d-md-flex mt-3 row-fluid d-none flex-row justify-content-around">
           <div className="">
             <img
