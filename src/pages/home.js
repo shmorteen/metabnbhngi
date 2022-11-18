@@ -169,7 +169,7 @@ class Home extends React.Component {
                   <img src="https://metabnb-hng-task3.netlify.app/assets/imageA.66ddcf04.png" alt="nfts" />
                   <img className="mt-3" src="https://metabnb-hng-task3.netlify.app/assets/imageA.66ddcf04.png" alt="nfts" />
                 </div>
-                <div className="col-6" style={{marginLeft: -40}}>
+                <div className="col-6">
                   <img src="https://metabnb-hng-task3.netlify.app/assets/imageA.66ddcf04.png" alt="nfts" />
                   <img className="mt-3" src="https://metabnb-hng-task3.netlify.app/assets/imageA.66ddcf04.png" alt="nfts" />
                 </div>
