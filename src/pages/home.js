@@ -163,15 +163,15 @@ class Home extends React.Component {
                 </button></span>
               </div>
             </div>
-            <div className="col-md-6 mt-5">
+            <div className="col-md-6 col-sm-12 d-xm-none mt-5">
               <div className="row">
                 <div className="col-md-5 mt-5">
                   <img src="https://metabnb-hng-task3.netlify.app/assets/imageA.66ddcf04.png" alt="nfts" />
-                  <img className="mt-3" src="https://metabnb-hng-task3.netlify.app/assets/imageA.66ddcf04.png" alt="nfts" />
+                  <img className="mt-3" src="https://metabnb-hng-task3.netlify.app/assets/imageD.d6660991.png" alt="nfts" />
                 </div>
-                <div className="col-md-5">
-                  <img src="https://metabnb-hng-task3.netlify.app/assets/imageA.66ddcf04.png" alt="nfts" />
-                  <img className="mt-3" src="https://metabnb-hng-task3.netlify.app/assets/imageA.66ddcf04.png" alt="nfts" />
+                <div className="col-md-5 mx-md-2">
+                  <img src="https://metabnb-hng-task3.netlify.app/assets/imageC.00c2f039.png" alt="nfts" />
+                  <img className="mt-3" src="https://metabnb-hng-task3.netlify.app/assets/imageB.a0d59941.png" alt="nfts" />
                 </div>
               </div>
             </div>
