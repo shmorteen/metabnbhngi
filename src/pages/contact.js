@@ -16,8 +16,7 @@ class Contact extends React.Component {
     render(){
     return (
       <>
-  <div>
-    <div>
+  <div className='container-fluid p-md-0 vw-100% vh-100%' style={{fontFamily: "Red Rose,cursive", maxHeight:"100%", maxWidth:"100%"}}>
     <div className="bg-white p-3" >
     <div className="d-md-flex mt-3 row-fluid d-none flex-row justify-content-around">
           <div className="">
@@ -140,31 +139,34 @@ class Contact extends React.Component {
           </div>
         </div>
       </div>
-    </div>
-    <div className=" mt-[5rem] md:mt-[8rem] md:px-0 lg:mt-[10rem]">
-      <div className="mx-5 mt-[7rem] md:m-5">
-        <div className="flex items-center justify-center  md:justify-start md:px-[3rem]" style={{color: "#434343" }}>
-          <div className="d-flex flex-row justify-content-around">
-            <a href="/placeToStay" style={{textDecoration: "none", color:"#434343", fontWeight:"bold"}}>Resturant</a>
-            <a href="/placeToStay" style={{textDecoration: "none", color:"#434343", fontWeight:"bold"}}>Cottage</a>
-            <a href="/placeToStay" style={{textDecoration: "none", color:"#434343", fontWeight:"bold"}}>Castle</a>
-            <a href="/placeToStay" style={{textDecoration: "none", color:"#434343", fontWeight:"bold"}}>fantast city</a>
-            <a href="/placeToStay" style={{textDecoration: "none", color:"#434343", fontWeight:"bold"}}>beach</a>
-            <a href="/placeToStay" style={{textDecoration: "none", color:"#434343", fontWeight:"bold"}}>Carbins</a>
-            <a href="/placeToStay" style={{textDecoration: "none", color:"#434343", fontWeight:"bold"}}>Off-grid</a>
-            <a href="/placeToStay" style={{textDecoration: "none", color:"#434343", fontWeight:"bold"}}>Farm</a>
-            <button className="btn border">
+    <div className="mt-3">
+      <div className="d-none d-md-flex">
+        <div className="flex items-center justify-center p-5" style={{color: "#434343" }}>
+          <div className="d-flex flex-row justify-content-around" style={{width: 1100}}>
+            <a href="/placeToStay" style={{textDecoration: "none", color:"grey", fontWeight:"bold"}}>Resturant</a>
+            <a href="/placeToStay" style={{textDecoration: "none", color:"grey", fontWeight:"bold"}}>Cottage</a>
+            <a href="/placeToStay" style={{textDecoration: "none", color:"grey", fontWeight:"bold"}}>Castle</a>
+            <a href="/placeToStay" style={{textDecoration: "none", color:"grey", fontWeight:"bold"}}>fantast city</a>
+            <a href="/placeToStay" style={{textDecoration: "none", color:"grey", fontWeight:"bold"}}>beach</a>
+            <a href="/placeToStay" style={{textDecoration: "none", color:"grey", fontWeight:"bold"}}>Carbins</a>
+            <a href="/placeToStay" style={{textDecoration: "none", color:"grey", fontWeight:"bold"}}>Off-grid</a>
+            <a href="/placeToStay" style={{textDecoration: "none", color:"grey", fontWeight:"bold"}}>Farm</a>
+            <button className="btn border mb-5">
             Location
             <span>
               <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACcSURBVHgB7ZRtCoAgDEA38T6FHqSO0lG6SieoEwidyDaoqBDb/vXhg5Jimxs+BPgNzrmOH1BipIGI2NDSghLLL+5sLXAixjiEEPrDJpX3fhTU3XPt4Qdeg4wxqUQEAancLNw5TTqBEisN5JHVXT0Sra7qmbW6ZjVNQWdR0zJv33eKZzVNQcU49lpMpLgIra5iTTfeq2u5Tctt+mEWx89eJ96f2IsAAAAASUVORK5CYII=" />
             </span>
           </button>
           </div>
-          
         </div>
-        <div className="mt-2 p-md-5">
+    </div>
+    {/* <div className="d-md-none d-flex">
+        <select></select>
+    </div> */}
+    </div>
+    <div className="mt-2 p-md-5">
             <div className='row mt-sm-2'>
-              <div className="col-md-3 w-auto col-sm-12 pt-2 border-light  mb-sm-2 justify-content-center" style={{borderRadius:20, border:"solid"}}>
+              <div className="col-md-3 col-sm-12 pt-2 border-light  mb-sm-2 justify-content-center" style={{borderRadius:20, border:"solid"}}>
                 <div className="">
                   <img
                     src="https://metabnb-hng-task3.netlify.app/assets/one.60764a5b.png"
@@ -236,7 +238,7 @@ class Contact extends React.Component {
                   </div>
                 </div>
               </div>
-              <div className="col-md-3 mx-md-4 w-auto col-sm-12 pt-2  mb-sm-2 border-light justify-content-center" style={{borderRadius:20, border:"solid"}}>
+              <div className="col-md-3 col-sm-12 pt-2  mb-sm-2 border-light justify-content-center" style={{borderRadius:20, border:"solid"}}>
                 <div className="">
                   <img
                     src="https://metabnb-hng-task3.netlify.app/assets/two.5d84b73c.png"
@@ -308,7 +310,7 @@ class Contact extends React.Component {
                   </div>
                 </div>
               </div>
-              <div className="col-md-3 w-auto col-sm-12 pt-2  mb-sm-2  border-light justify-content-center" style={{borderRadius:20, border:"solid"}}>
+              <div className="col-md-3 col-sm-12 pt-2  mb-sm-2  border-light justify-content-center" style={{borderRadius:20, border:"solid"}}>
                 <div className="">
                   <img
                     src="https://metabnb-hng-task3.netlify.app/assets/three.00b19e76.png"
@@ -380,7 +382,7 @@ class Contact extends React.Component {
                   </div>
                 </div>
               </div>
-              <div className="col-md-3 mx-md-4 w-auto col-sm-12 pt-2 border-light justify-content-center" style={{borderRadius:20, border:"solid"}}>
+              <div className="col-md-3 col-sm-12 pt-2 border-light justify-content-center" style={{borderRadius:20, border:"solid"}}>
                 <div className="">
                   <img
                     src="https://metabnb-hng-task3.netlify.app/assets/four.02c41320.png"
@@ -454,7 +456,7 @@ class Contact extends React.Component {
               </div>
             </div>
             <div className='row mt-3 mt-sm-2'>
-              <div className="col-md-3 w-auto col-sm-12 pt-2 mb-sm-2 border-light justify-content-center" style={{borderRadius:20, border:"solid"}}>
+              <div className="col-md-3 col-sm-12 pt-2 mb-sm-2 border-light justify-content-center" style={{borderRadius:20, border:"solid"}}>
                 <div className="">
                   <img
                     src="https://metabnb-hng-task3.netlify.app/assets/five.92b302f8.png"
@@ -526,7 +528,7 @@ class Contact extends React.Component {
                   </div>
                 </div>
               </div>
-              <div className="col-md-3 mx-md-4 w-auto pt-2  mb-sm-2  border-light justify-content-center" style={{borderRadius:20, border:"solid"}}>
+              <div className="col-md-3 pt-2  mb-sm-2  border-light justify-content-center" style={{borderRadius:20, border:"solid"}}>
                 <div className="">
                   <img
                     src="https://metabnb-hng-task3.netlify.app/assets/six.ceac0e8f.png"
@@ -598,7 +600,7 @@ class Contact extends React.Component {
                   </div>
                 </div>
               </div>
-              <div className="col-md-3 w-auto col-sm-12 pt-2  mb-sm-2 border-light justify-content-center" style={{borderRadius:20, border:"solid"}}>
+              <div className="col-md-3 col-sm-12 pt-2  mb-sm-2 border-light justify-content-center" style={{borderRadius:20, border:"solid"}}>
                 <div className="">
                   <img
                     src="https://metabnb-hng-task3.netlify.app/assets/seven.88fbbecf.png"
@@ -670,7 +672,7 @@ class Contact extends React.Component {
                   </div>
                 </div>
               </div>
-              <div className="col-md-3 mx-md-4 w-auto col-sm-12 pt-2  mb-sm-2 border-light justify-content-center" style={{borderRadius:20, border:"solid"}}>
+              <div className="col-md-3 col-sm-12 pt-2  mb-sm-2 border-light justify-content-center" style={{borderRadius:20, border:"solid"}}>
                 <div className="">
                   <img
                     src="https://metabnb-hng-task3.netlify.app/assets/eight.b2722fc8.png"
@@ -744,8 +746,7 @@ class Contact extends React.Component {
               </div>
             </div>
           </div>
-      </div>
-    </div>
+
     <footer style={{backgroundColor:"#1D1D1E"}}>
           <div className="d-flex d-md-flex d-none p-3">
           <div className="row mt-5 w-100">
@@ -933,7 +934,7 @@ class Contact extends React.Component {
         </div> 
           </div>   
                
-      </footer>
+    </footer>
   </div>
   <Outlet />
     </>

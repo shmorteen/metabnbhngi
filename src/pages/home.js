@@ -17,7 +17,7 @@ class Home extends React.Component {
   render() {
     return (
       <>
-  <div className='container-fluid p-sm-5 p-md-0 vw-100% vh-100%' style={{fontFamily: "Red Rose,cursive", maxHeight:"100%", maxWidth:"100%"}}>
+  <div className='container-fluid p-md-0 vw-100% vh-100%' style={{fontFamily: "Red Rose,cursive", maxHeight:"100%", maxWidth:"100%"}}>
         <div className="d-md-flex mt-3 row-fluid d-none flex-row justify-content-around">
           <div className="">
             <img
@@ -251,7 +251,7 @@ class Home extends React.Component {
           </h2>
           <div className="mt-2 p-md-5">
             <div className='row mt-sm-2'>
-              <div className="col-md-3 w-auto col-sm-12 pt-2 border-light  mb-sm-2 justify-content-center" style={{borderRadius:20, border:"solid"}}>
+              <div className="col-md-3 col-sm-12 pt-2 border-light  mb-sm-2 justify-content-center" style={{borderRadius:20, border:"solid"}}>
                 <div className="">
                   <img
                     src="https://metabnb-hng-task3.netlify.app/assets/one.60764a5b.png"
@@ -323,7 +323,7 @@ class Home extends React.Component {
                   </div>
                 </div>
               </div>
-              <div className="col-md-3 mx-md-4 w-auto col-sm-12 pt-2  mb-sm-2 border-light justify-content-center" style={{borderRadius:20, border:"solid"}}>
+              <div className="col-md-3 col-sm-12 pt-2  mb-sm-2 border-light justify-content-center" style={{borderRadius:20, border:"solid"}}>
                 <div className="">
                   <img
                     src="https://metabnb-hng-task3.netlify.app/assets/two.5d84b73c.png"
@@ -395,7 +395,7 @@ class Home extends React.Component {
                   </div>
                 </div>
               </div>
-              <div className="col-md-3 w-auto col-sm-12 pt-2  mb-sm-2  border-light justify-content-center" style={{borderRadius:20, border:"solid"}}>
+              <div className="col-md-3 col-sm-12 pt-2  mb-sm-2  border-light justify-content-center" style={{borderRadius:20, border:"solid"}}>
                 <div className="">
                   <img
                     src="https://metabnb-hng-task3.netlify.app/assets/three.00b19e76.png"
@@ -467,7 +467,7 @@ class Home extends React.Component {
                   </div>
                 </div>
               </div>
-              <div className="col-md-3 mx-md-4 w-auto col-sm-12 pt-2 border-light justify-content-center" style={{borderRadius:20, border:"solid"}}>
+              <div className="col-md-3 col-sm-12 pt-2 border-light justify-content-center" style={{borderRadius:20, border:"solid"}}>
                 <div className="">
                   <img
                     src="https://metabnb-hng-task3.netlify.app/assets/four.02c41320.png"
@@ -541,7 +541,7 @@ class Home extends React.Component {
               </div>
             </div>
             <div className='row mt-3 mt-sm-2'>
-              <div className="col-md-3 w-auto col-sm-12 pt-2 mb-sm-2 border-light justify-content-center" style={{borderRadius:20, border:"solid"}}>
+              <div className="col-md-3 col-sm-12 pt-2 mb-sm-2 border-light justify-content-center" style={{borderRadius:20, border:"solid"}}>
                 <div className="">
                   <img
                     src="https://metabnb-hng-task3.netlify.app/assets/five.92b302f8.png"
@@ -613,7 +613,7 @@ class Home extends React.Component {
                   </div>
                 </div>
               </div>
-              <div className="col-md-3 mx-md-4 w-auto pt-2  mb-sm-2  border-light justify-content-center" style={{borderRadius:20, border:"solid"}}>
+              <div className="col-md-3 pt-2  mb-sm-2  border-light justify-content-center" style={{borderRadius:20, border:"solid"}}>
                 <div className="">
                   <img
                     src="https://metabnb-hng-task3.netlify.app/assets/six.ceac0e8f.png"
@@ -685,7 +685,7 @@ class Home extends React.Component {
                   </div>
                 </div>
               </div>
-              <div className="col-md-3 w-auto col-sm-12 pt-2  mb-sm-2 border-light justify-content-center" style={{borderRadius:20, border:"solid"}}>
+              <div className="col-md-3 col-sm-12 pt-2  mb-sm-2 border-light justify-content-center" style={{borderRadius:20, border:"solid"}}>
                 <div className="">
                   <img
                     src="https://metabnb-hng-task3.netlify.app/assets/seven.88fbbecf.png"
@@ -757,7 +757,7 @@ class Home extends React.Component {
                   </div>
                 </div>
               </div>
-              <div className="col-md-3 mx-md-4 w-auto col-sm-12 pt-2  mb-sm-2 border-light justify-content-center" style={{borderRadius:20, border:"solid"}}>
+              <div className="col-md-3 col-sm-12 pt-2  mb-sm-2 border-light justify-content-center" style={{borderRadius:20, border:"solid"}}>
                 <div className="">
                   <img
                     src="https://metabnb-hng-task3.netlify.app/assets/eight.b2722fc8.png"
@@ -968,9 +968,8 @@ class Home extends React.Component {
         </div> 
           </div>
 
-          <div className="d-flex d-md-none p-3">
-          <div className="row-fluid">
-          <div className='col-3'>
+          <div className="d-flex flex-column d-md-none p-3">
+          <div className=''>
             <div className='d-flex flex-column'>
             <img
             src="https://metabnb-hng-task3.netlify.app/assets/Group.39565081.svg"
@@ -1007,7 +1006,7 @@ class Home extends React.Component {
             </div>
           
           </div>
-          <div className='col-3 mt-3'>
+          <div className='mt-3'>
           <div className='text-start'>
               <h3 className="mb-6 font-bold" style={{color: "white"}}>Community</h3>
               <div className="my-2 text-sm">
@@ -1024,7 +1023,7 @@ class Home extends React.Component {
               </div>
               </div>
           </div>
-          <div className='col-3 mt-3'>
+          <div className='mt-3'>
                 <div className="text-start">
                 <h3 className="mb-6 font-bold" style={{color: "white"}}>Places</h3>
                 </div>
@@ -1041,7 +1040,7 @@ class Home extends React.Component {
                 <a href="/" style={{textDecoration:"none", color:"white", fontWeight:"bold"}}>Learn more </a>
               </div>
           </div>
-          <div className='col-3 mt-3'>
+          <div className='mt-3'>
                 <div className="text-start">
                 <h3 className="mb-6 font-bold" style={{color: "white"}}>About us</h3>
                 </div>
@@ -1057,8 +1056,7 @@ class Home extends React.Component {
               <div className="text-start">
                 <a href="/" style={{textDecoration:"none", color:"white",fontSize:12, fontWeight:"bold"}}>Contact us </a>
               </div>
-          </div>
-        </div> 
+          </div> 
           </div>   
                
       </footer>
