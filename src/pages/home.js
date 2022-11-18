@@ -165,11 +165,11 @@ class Home extends React.Component {
             </div>
             <div className="col-md-6 mt-5">
               <div className="row">
-                <div className="col-6 mt-5" >
+                <div className="col-md-5 mt-5">
                   <img src="https://metabnb-hng-task3.netlify.app/assets/imageA.66ddcf04.png" alt="nfts" />
                   <img className="mt-3" src="https://metabnb-hng-task3.netlify.app/assets/imageA.66ddcf04.png" alt="nfts" />
                 </div>
-                <div className="col-6">
+                <div className="col-md-5">
                   <img src="https://metabnb-hng-task3.netlify.app/assets/imageA.66ddcf04.png" alt="nfts" />
                   <img className="mt-3" src="https://metabnb-hng-task3.netlify.app/assets/imageA.66ddcf04.png" alt="nfts" />
                 </div>

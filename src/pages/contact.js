@@ -142,7 +142,7 @@ class Contact extends React.Component {
     <div className="mt-3">
       <div className="d-none d-md-flex">
         <div className="flex items-center justify-center p-5" style={{color: "#434343" }}>
-          <div className="d-flex flex-row justify-content-around" style={{width: 950}}>
+          <div className="d-flex flex-row justify-content-around" style={{width: 800}}>
             <a href="/placeToStay" style={{textDecoration: "none", color:"grey", fontWeight:"bold"}}>Resturant</a>
             <a href="/placeToStay" style={{textDecoration: "none", color:"grey", fontWeight:"bold"}}>Cottage</a>
             <a href="/placeToStay" style={{textDecoration: "none", color:"grey", fontWeight:"bold"}}>Castle</a>
