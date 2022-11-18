@@ -251,11 +251,11 @@ class Home extends React.Component {
           </h2>
           <div className="mt-2 p-md-5">
             <div className='row mt-sm-2'>
-              <div className="col-md-3 col-sm-12 pt-2 border-light  mb-sm-2 justify-content-center" style={{borderRadius:20, border:"solid"}}>
+              <div className="col-md-3 col-sm-12 pt-2 border-light mb-sm-2 justify-content-center" style={{borderRadius:20, border:"solid"}}>
                 <div className="">
-                  <img
+                  <img className='w-100'
                     src="https://metabnb-hng-task3.netlify.app/assets/one.60764a5b.png"
-                    alt="Nfts" style={{height: 250, width: 250, borderRadius:20}}
+                    alt="Nfts" style={{height: 250, borderRadius:20}}
                   />
                   {/* <svg
                     className=" absolute top-3 right-5"
@@ -325,7 +325,7 @@ class Home extends React.Component {
               </div>
               <div className="col-md-3 col-sm-12 pt-2  mb-sm-2 border-light justify-content-center" style={{borderRadius:20, border:"solid"}}>
                 <div className="">
-                  <img
+                  <img className='w-100'
                     src="https://metabnb-hng-task3.netlify.app/assets/two.5d84b73c.png"
                     alt="Nfts" style={{height: 250, width: 250, borderRadius:20}}
                   />
@@ -397,7 +397,7 @@ class Home extends React.Component {
               </div>
               <div className="col-md-3 col-sm-12 pt-2  mb-sm-2  border-light justify-content-center" style={{borderRadius:20, border:"solid"}}>
                 <div className="">
-                  <img
+                  <img className='w-100'
                     src="https://metabnb-hng-task3.netlify.app/assets/three.00b19e76.png"
                     alt="Nfts" style={{height: 250, width: 250, borderRadius:20}}
                   />
@@ -469,7 +469,7 @@ class Home extends React.Component {
               </div>
               <div className="col-md-3 col-sm-12 pt-2 border-light justify-content-center" style={{borderRadius:20, border:"solid"}}>
                 <div className="">
-                  <img
+                  <img className='w-100'
                     src="https://metabnb-hng-task3.netlify.app/assets/four.02c41320.png"
                     alt="Nfts" style={{height: 250, width: 250, borderRadius:20}}
                   />
@@ -543,7 +543,7 @@ class Home extends React.Component {
             <div className='row mt-3 mt-sm-2'>
               <div className="col-md-3 col-sm-12 pt-2 mb-sm-2 border-light justify-content-center" style={{borderRadius:20, border:"solid"}}>
                 <div className="">
-                  <img
+                  <img className='w-100'
                     src="https://metabnb-hng-task3.netlify.app/assets/five.92b302f8.png"
                     alt="Nfts" style={{height: 250, width: 250, borderRadius:20}}
                   />
@@ -615,7 +615,7 @@ class Home extends React.Component {
               </div>
               <div className="col-md-3 pt-2  mb-sm-2  border-light justify-content-center" style={{borderRadius:20, border:"solid"}}>
                 <div className="">
-                  <img
+                  <img className='w-100'
                     src="https://metabnb-hng-task3.netlify.app/assets/six.ceac0e8f.png"
                     alt="Nfts" style={{height: 250, width: 250, borderRadius:20}}
                   />
@@ -687,7 +687,7 @@ class Home extends React.Component {
               </div>
               <div className="col-md-3 col-sm-12 pt-2  mb-sm-2 border-light justify-content-center" style={{borderRadius:20, border:"solid"}}>
                 <div className="">
-                  <img
+                  <img className='w-100'
                     src="https://metabnb-hng-task3.netlify.app/assets/seven.88fbbecf.png"
                     alt="Nfts" style={{height: 250, width: 250, borderRadius:20}}
                   />
@@ -759,7 +759,7 @@ class Home extends React.Component {
               </div>
               <div className="col-md-3 col-sm-12 pt-2  mb-sm-2 border-light justify-content-center" style={{borderRadius:20, border:"solid"}}>
                 <div className="">
-                  <img
+                  <img className='w-100'
                     src="https://metabnb-hng-task3.netlify.app/assets/eight.b2722fc8.png"
                     alt="Nfts" style={{height: 250, width: 250, borderRadius:20}}
                   />
