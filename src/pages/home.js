@@ -163,7 +163,7 @@ class Home extends React.Component {
                 </button></span>
               </div>
             </div>
-            <div className="col-md-6 mt-5" style={{paddingLeft: 60}}>
+            <div className="col-md-6 mt-5">
               <div className="row">
                 <div className="col-6 mt-5" >
                   <img src="https://metabnb-hng-task3.netlify.app/assets/imageA.66ddcf04.png" alt="nfts" />

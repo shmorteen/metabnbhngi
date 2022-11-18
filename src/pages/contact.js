@@ -16,8 +16,8 @@ class Contact extends React.Component {
     render(){
     return (
       <>
-  <div className='container-fluid p-md-0 vw-100% vh-100%' style={{fontFamily: "Red Rose,cursive", maxHeight:"100%", maxWidth:"100%"}}>
-    <div className="bg-white p-3" >
+  <div className='container-fluid' style={{fontFamily: "Red Rose,cursive", maxHeight:"100%", maxWidth:"100%"}}>
+    <div className="bg-white p-3">
     <div className="d-md-flex mt-3 row-fluid d-none flex-row justify-content-around">
           <div className="">
             <img
@@ -142,7 +142,7 @@ class Contact extends React.Component {
     <div className="mt-3">
       <div className="d-none d-md-flex">
         <div className="flex items-center justify-center p-5" style={{color: "#434343" }}>
-          <div className="d-flex flex-row justify-content-around" style={{width: 1100}}>
+          <div className="d-flex flex-row justify-content-around" style={{width: 800}}>
             <a href="/placeToStay" style={{textDecoration: "none", color:"grey", fontWeight:"bold"}}>Resturant</a>
             <a href="/placeToStay" style={{textDecoration: "none", color:"grey", fontWeight:"bold"}}>Cottage</a>
             <a href="/placeToStay" style={{textDecoration: "none", color:"grey", fontWeight:"bold"}}>Castle</a>
@@ -745,8 +745,7 @@ class Contact extends React.Component {
                 </div>
               </div>
             </div>
-          </div>
-
+    </div>
     <footer style={{backgroundColor:"#1D1D1E"}}>
           <div className="d-flex d-md-flex d-none p-3">
           <div className="row mt-5 w-100">
